@@ -1,0 +1,99 @@
+/* селектор {
+    свойство: значение;
+    свойство: значение;
+} */
+
+* {
+    box-sizing: border-box; /* установление строгих параметров размера box включ. margines, border, paddings, & box itself */
+} /* * звёздочка означает, что данный параметр относиться ко всем элементам файла стилей */
+
+/* html {
+    font-size: 30px;
+} */
+
+body{
+background-color: khaki;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(233, 22, 22); /* Можно использовать RGBA, чтобы добавить прозрачность, напр. rgba(233,22,22, 0.5) */
+    font-size: 26px;
+    font-style: italic;
+    text-decoration: underline;
+    /* text-decoration: line-through; */
+}
+
+.text {
+    font-weight: 700; /* более правильный способ нежели использовать B, I, U html файле */
+    text-transform: uppercase;
+}
+
+.chapter {
+    color: #4B0082;
+    font-weight: 900;
+} 
+
+.pink {
+    color: pink;
+}
+
+a {
+    padding: 20px;
+    margin: 20px;
+} /* a - установка стилей для ссылок на сайте */
+
+img {
+    display: block;
+    margin: 0 auto; /* расположение картинки по центру с помощью: display: block; и margin: 0 auto; */
+    width: 300px;
+    /* float: right; /* оптекание текста с левой/правой стороны */
+} /* img - установка стилей для картинок на сайте */
+
+
+#begin {
+    color: orange;
+    font-weight: bold;
+}
+
+.box {
+/* position: absolute; */
+vertical-align: middle; /* выравнивание блоков, напр. по середине или верху; работает только если установлен параметр display: inline-block; */
+display: inline-block; /* - если добавить параметр, то блоки станут рядом друг с другом, а не сверху и снизу */
+width: 300px;
+height: 300px;
+background-color: green;
+padding: 20px; /* также можно записать отступы сразу для всех сторон: сверху, справа, снизу и слева как напр. padding: 20px 50px 40px 60px; */
+/* border-width: 3px;
+border-style: solid;
+border-color: black; */
+border: 3px solid black; /* удобней использовать сразу 3 комбинированных свойства, а не писать их по отдельности */
+margin: 20px;
+/* z-index: 3; */ /* расположение блока на оси Z, наибольшая цифра - наивысший приоритет, при условии, что position: absolute; */
+}
+
+nav {
+    /* static (default), relative, absolute, fixed (приклеенное меню, которое двигается при скролинге), inherit (будет наследовать свойства из родительского меню) */
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    /* bottom, top, left, right */
+}
+
+.example {
+    position: relative;
+/*     background-color: red;
+    height: 350px; */
+}
+
+.red {
+    /* position: absolute; */
+    /* left: 80px; */
+    background-color: red;
+    width: 50vm;
+    height: 50vh;
+    /* z-index: 4; */
+}
